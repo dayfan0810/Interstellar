@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/outter_fragment_tl_height"
+    android:background="@color/colorPrimary"
+    app:contentInsetStart="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:theme="@style/AppTheme">
+
+        <ImageView
+            android:id="@+id/iv_title_menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+
+            android:src="@drawable/actionbar_settings" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/bar_disco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/actionbar_discover" />
+
+            <ImageView
+                android:id="@+id/bar_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:src="@drawable/actionbar_stock" />
+
+            <ImageView
+                android:id="@+id/bar_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:src="@drawable/actionbar_math" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/bar_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/actionbar_search" />
+
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

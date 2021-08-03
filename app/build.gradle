@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "cn.intersteller.darkintersteller"
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.heaven7.android.dragflowlayout:dragflowlayout:1.0.6'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'org.jsoup:jsoup:1.13.1'
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation "io.reactivex.rxjava2:rxjava:2.2.10"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'androidx.navigation:navigation-ui:2.3.4'
+    implementation 'net.steamcrafted:materialiconlib:1.1.5'
+//    implementation files('libs/pldroid-player-2.1.9.jar')
+    //exo播放器
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.4'
+    implementation project(path: ':libsystemui')
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    implementation 'com.facebook.fresco:fresco:1.5.0'
+    implementation 'com.king.view:circleprogressview:1.1.2'
+
+    //帧率监控
+//    debugImplementation "com.github.brianPlummer:tinydancer:0.1.2"
+//    releaseImplementation "com.github.brianPlummer:tinydancer-noop:0.1.2"
+//    testImplementation "com.github.brianPlummer:tinydancer-noop:0.1.2"
+
+}

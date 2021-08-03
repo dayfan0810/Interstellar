@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <cn.intersteller.darkintersteller.custview.LikeYoutobeSlideUpView
+        android:id="@+id/likeyoutobeslideupview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue">
+
+
+        <ImageView
+            android:layout_gravity="start"
+            android:id="@+id/album_art"
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_album_black" />
+
+        <LinearLayout
+            android:id="@+id/song_name_singer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="top"
+            android:layout_marginStart="48dp"
+            android:background="@color/red"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/song_name"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="42dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="我的地盘"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/song_s_artist"
+                style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="42dp"
+                android:ellipsize="end"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:text="周杰伦"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/song_oprator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center" />
+
+            <ImageView
+                android:id="@+id/play_pause"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@id/next"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/previous"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@+id/play_pause"
+                android:alpha="0"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center" />
+
+
+            <ImageView
+                android:id="@+id/ic_play_list"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/next"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center" />
+
+        </RelativeLayout>
+
+
+    </cn.intersteller.darkintersteller.custview.LikeYoutobeSlideUpView>
+</FrameLayout>

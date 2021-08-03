@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.intersteller.darkintersteller.MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_mian_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+<!--    <cn.intersteller.darkintersteller.custview.slideup2.DragViewPanel-->
+<!--        android:id="@+id/dragview"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="#FFee21">-->
+
+<!--        <include layout="@layout/include_likeyoutobeslideupview_min" />-->
+
+<!--    </cn.intersteller.darkintersteller.custview.slideup2.DragViewPanel>-->
+
+
+    <!--    <include-->
+    <!--        layout="@layout/slideup_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true" />-->
+
+
+</FrameLayout>

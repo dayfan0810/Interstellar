@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "739783807764",
+    "firebase_url": "https://interstellar-acdf7.firebaseio.com",
+    "project_id": "interstellar-acdf7",
+    "storage_bucket": "interstellar-acdf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739783807764:android:6823cd863c377348a66801",
+        "android_client_info": {
+          "package_name": "cn.intersteller.darkintersteller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739783807764-1bvn715066l7uue09vbm71fggk82ahuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNU4e1sUsjiRPWrMr--AQ46asaVjqRi3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739783807764-1bvn715066l7uue09vbm71fggk82ahuj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

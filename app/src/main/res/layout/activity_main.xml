@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:fitsSystemWindows="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                >
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar_layout" />
+
+                <include layout="@layout/content_main" />
+
+<!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                    android:id="@+id/fab"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="bottom|end"-->
+<!--                    android:layout_margin="@dimen/fab_margin"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <cn.intersteller.darkintersteller.custview.MyFrameLayoutMoveUp
+        android:id="@+id/myframelayoutmoveup_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".MainActivity">
+
+        <!--视频vieaw -->
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/likeyoutobe_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:surface_type="texture_view"
+            app:default_artwork="@drawable/only_music"
+            app:use_controller="false" />
+
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/likeyoutobe_player_song_info"
+            android:layout_width="@dimen/likeyoutobe_player_song_info_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="30dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/likeyoutobe_song_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="我的地盘"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                tools:text="title" />
+
+            <TextView
+                android:id="@+id/likeyoutobe_song_s_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:text="周杰伦"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                tools:text="artist" />
+
+        </LinearLayout>
+
+        <include layout="@layout/include_likeyoutobe_playback_control_view" />
+    </cn.intersteller.darkintersteller.custview.MyFrameLayoutMoveUp>
+
+
+</FrameLayout>

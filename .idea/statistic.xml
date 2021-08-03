@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Statistic">
+    <option name="excludedDirectories">
+      <list>
+        <option value="$PROJECT_DIR$/gradle" />
+        <option value="$PROJECT_DIR$/androidos/src/androidTest" />
+        <option value="$PROJECT_DIR$/androidos/src/test" />
+        <option value="$PROJECT_DIR$/app/src/main/res" />
+        <option value="$PROJECT_DIR$/androidos/libs" />
+        <option value="$PROJECT_DIR$/androidos/src/androidTest" />
+        <option value="$PROJECT_DIR$/androidos/src/test" />
+        <option value="$PROJECT_DIR$/androidos/src/main/res" />
+      </list>
+    </option>
+  </component>
+</project>

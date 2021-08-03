@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.intersteller.darkintersteller.custview.LikeYoutobeSlideUpView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+
+    <!--视频vieaw -->
+    <LinearLayout
+        android:id="@+id/likeyoutobe_video_view"
+        android:layout_width="@dimen/sliding_up_header"
+        android:layout_height="@dimen/sliding_up_header"
+        android:background="@color/red">
+
+        <TextureView
+            android:id="@+id/movie"
+            android:layout_width="@dimen/sliding_up_header"
+            android:layout_height="@dimen/sliding_up_header"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/likeyoutobe_player_song_info"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/sliding_up_header"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/likeyoutobe_song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="我的地盘"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="title" />
+
+        <TextView
+            android:id="@+id/likeyoutobe_song_s_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:text="周杰伦"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            tools:text="artist" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/likeyoutobe_player_bottom_controler"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/sliding_up_header"
+        android:background="@color/black"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/likeyoutobe_previous"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/ic_precious_song_play"
+            android:scaleType="center" />
+
+        <View
+            android:id="@+id/likeyoutobe_play_pause"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="13dp"
+            android:layout_toRightOf="@id/likeyoutobe_previous"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/likeyoutobe_next"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="13dp"
+            android:layout_toRightOf="@id/likeyoutobe_play_pause"
+            android:background="@drawable/ic_next_song_play"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/ic_play_list"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="15dp"
+            android:layout_toRightOf="@id/likeyoutobe_next"
+            android:background="@drawable/ic__song_play_playlist"
+            android:scaleType="center" />
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/likeyoutobe_seek_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/likeyoutobe_video_view"
+        android:background="@color/chartColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="10dp"
+        android:paddingTop="2dp"
+        android:visibility="visible" />
+
+</cn.intersteller.darkintersteller.custview.LikeYoutobeSlideUpView>

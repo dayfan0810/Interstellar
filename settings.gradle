@@ -1,0 +1,6 @@
+include ':uidialog'
+include ':uiasr'
+include ':core'
+include ':app'
+include ':libsystemui'
+include ':myskin'

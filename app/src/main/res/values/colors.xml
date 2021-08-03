@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <color name="colorPrimary">#171903</color>-->
+    <!--    <color name="colorPrimaryDark">#171903</color>-->
+    <color name="colorPrimaryDarkJianBian">#302f2f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="themeColor">#ffce3d3a</color>
+    <color name="chartColor">#34bf2a</color>
+    <color name="common_background">#FFFFFF</color>
+    <color name="dark_blue">#ff028fea</color>
+    <color name="text_color_grey">#f2efef</color>
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="app_common_color">#ff3cb3ff</color>
+    <color name="input_num_stroke_color">#ffbababa</color>
+    <color name="blue">#00a0e9</color>
+    <color name="clor_dwadwadawdaw">#00a0e9</color>
+    <color name="black">#000000</color>
+    <color name="red">#C91623</color>
+    <color name="oriange">#ff9a00</color>
+    <color name="white">#ffffff</color>
+    <color name="color_top_rank">#fb7299</color>
+    <color name="window_background">#eaeaea</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#7a7a7a</color>
+    <color name="light_gray">#b5b5b5</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#009688</color>
+    <color name="daynight_tv_bg">#ededed</color>
+    <color name="daynight_tv_text">#000000</color>
+    <color name="daynight_iv_bg">#d5e0e3</color>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.intersteller.darkintersteller.custview.ArcMenuByImooc xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:arcmenu_mine="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/arc_menu_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    arcmenu_mine:menu_position="right_bottom"
+    arcmenu_mine:menu_radius="130dp">
+
+    <RelativeLayout
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/arc_menu_center_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/composer_button" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_shape"
+        android:tag="Music" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_shape"
+        android:tag="Place" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_shape"
+        android:tag="Sleep" />
+
+
+</cn.intersteller.darkintersteller.custview.ArcMenuByImooc>

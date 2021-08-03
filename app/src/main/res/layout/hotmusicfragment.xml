@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/progess_anim" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/hotmusic_swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/white"
+                android:id="@+id/hotmusic_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="2dp" />
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

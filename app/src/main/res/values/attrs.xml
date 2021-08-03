@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SortViewAttrs">
+        <attr name="barColor" format="color" />
+        <attr name="targetColor" format="color" />
+        <attr name="traceColor" format="color" />
+        <attr name="quadColor" format="color" />
+        <attr name="completeColor" format="color" />
+        <attr name="textInfoColor" format="color" />
+        <attr name="swapAColor" format="color" />
+        <attr name="swapBColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="deng_slideup_flingvelocity" format="integer" />//滑动速度
+        <attr name="deng_slideup_panelheight" format="dimension" />//面板高度
+        <attr name="deng_slideup_shadowcolor" format="color" />//背部阴影
+        <attr name="deng_slideup_initial_state" format="enum">//面板展开状态
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+            <enum name="anchored" value="2" />
+            <enum name="hidden" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ArcMenuByImooc">
+
+        <attr name="menu_position" format="enum">
+            <enum name="left_top" value="0" />
+            <enum name="right_top" value="1" />
+            <enum name="left_bottom" value="2" />
+            <enum name="right_bottom" value="3" />
+        </attr>
+
+        <attr name="menu_radius" format="dimension" />
+
+    </declare-styleable>
+</resources>

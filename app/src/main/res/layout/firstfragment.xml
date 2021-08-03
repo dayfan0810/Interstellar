@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff2f4f5">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/disco_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inner_fragment_tl_height"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="#FFFFFF"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="#FFFFFF" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/disco_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/disco_tab">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <!--    <include layout="@layout/include_likeyoutobeslideupview_min" />-->
+</RelativeLayout>

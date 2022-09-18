@@ -76,7 +76,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView, View
         loginPresenter = new LoginPresenterCompl(this);
         loginPresenter.setProgressBarVisiblity(View.INVISIBLE);
 
-        StringBuilder userAndPasswordUrl = getUserAndPasswordUrl("mr_day@163.com", "razrjay1234");
+        StringBuilder userAndPasswordUrl = getUserAndPasswordUrl("mr_day@163.com", "WYrazrjay12");
         Log.i("dengsb222222", "userAndPasswordUrl = " + userAndPasswordUrl.toString());
         asyncValidate(userAndPasswordUrl.toString());
     }
@@ -88,7 +88,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView, View
     }
 
     private void asyncValidate(final String account) {
-        //account:http://42.192.43.247:3000/login?email=mr_day@163.com&password=razrjay1234
+        //account:http://1.15.151.241:3000/login?email=mr_day@163.com&password=WYrazrjay12
         new Thread(() -> {
             HttpUtil.getHttpUtilInstance().sendOkHttpRequest(account, new Callback() {
                 @Override
@@ -189,7 +189,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView, View
             public void onResponse(Call call, Response response) throws IOException {
                 final String responseText = response.body().string();
                 Log.i("deng-pan", "Constant.NETEASE_CLOUD_PAN = " + Constant.NETEASE_CLOUD_PAN);
-                //http://39.108.131.225:3000/user/cloud?limit=500
+                //http://1.15.151.241:3000/user/cloud?limit=500
                 try {
                     JSONObject jsonObject = new JSONObject(responseText);
                     String resultCode = jsonObject.optString("code");
@@ -209,7 +209,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView, View
                         CloudPanBean.DataBean.SimpleSongBean simpleSongBean = new CloudPanBean.DataBean.SimpleSongBean();
                         JSONObject simpleSong = cloudPanItem.getJSONObject("simpleSong");
                         String song_name = simpleSong.optString("name");//歌名
-                        String song_id = simpleSong.optString("id");//歌曲ID
+                        int song_id = simpleSong.optInt("id");//歌曲ID
                         simpleSongBean.setName(song_name);
                         simpleSongBean.setId(song_id);
                         mSimpleSongBeans.add(simpleSongBean);

@@ -75,7 +75,7 @@ public class NetSearchActivity extends AppCompatActivity implements View.OnTouch
         ft.commit();
 
         if (ScreenUtils.commonROMPermissionCheck(NetSearchActivity.this)) {
-            showFloat();
+//            showFloat();
         } else {
             requestAlertWindowPermission();
         }
@@ -162,7 +162,7 @@ public class NetSearchActivity extends AppCompatActivity implements View.OnTouch
         if (requestCode == 42) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 if (Settings.canDrawOverlays(this)) {
-                    showFloat();
+//                    showFloat();
                 } else {
                     Toast.makeText(NetSearchActivity.this, "没有悬浮窗权限", Toast.LENGTH_LONG).show();
                 }

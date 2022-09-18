@@ -113,9 +113,9 @@ public class NeteaseFragment extends Fragment implements SwipeRefreshLayout.OnRe
                     Log.i("dengdb", "歌曲名=" + song_name + ", 专辑名=" + album_name + ",歌手名=" + singer_name);
                     SearchSongBean.ResultBean.SongsBean songbean =
                             new SearchSongBean.ResultBean.SongsBean();
-                    SearchSongBean.ResultBean.SongsBean.ArtistsBean artistsBean =
-                            new SearchSongBean.ResultBean.SongsBean.ArtistsBean();
-                    songbean.setId(song_id + "");//id
+                    SearchSongBean.ResultBean.SongsBean.ArBean artistsBean =
+                            new SearchSongBean.ResultBean.SongsBean.ArBean();
+                    songbean.setId(song_id);//id
                     songbean.setName(song_name);//歌名
                     searchSongBeans.add(songbean);
                     album_name_Beans.add(album_name);//专辑
@@ -129,7 +129,7 @@ public class NeteaseFragment extends Fragment implements SwipeRefreshLayout.OnRe
 
 
                 JsonObject resposeJsonObject = HttpUtil.getResposeJsonObject(Constant.NETEASE_SEARCH + submit_string);
-                //http://39.108.131.225:3000/search?keywords=周杰伦
+                //http://1.15.151.241:3000/search?keywords=周杰伦
                 JsonObject result = resposeJsonObject.get("result").getAsJsonObject();
                 int songCount = result.get("songCount").getAsInt();
                 if (songCount != 0) {
@@ -137,31 +137,32 @@ public class NeteaseFragment extends Fragment implements SwipeRefreshLayout.OnRe
                     for (JsonElement song : songs) {
                         SearchSongBean.ResultBean.SongsBean songsBean = MyApplication.gsonInstance().fromJson(song, SearchSongBean.ResultBean.SongsBean.class);
                         searchSongBeans.add(songsBean);
-                        JsonObject songAsJsonObject = song.getAsJsonObject();
+                        JsonObject a_songAsJsonObject = song.getAsJsonObject();
 
-                        //给artists做分析/////////////////////////////////////////
-                        JsonArray artists = songAsJsonObject.get("artists").getAsJsonArray();
+
+                        //给artists做分析--start/////////////////////////////////////////
+                        JsonArray artists = a_songAsJsonObject.get("ar").getAsJsonArray();
                         StringBuilder sb = new StringBuilder();//放在需要遍历的外面
                         for (JsonElement artist : artists) {
                             JsonObject artist_item = artist.getAsJsonObject();
-                            SearchSongBean.ResultBean.SongsBean.ArtistsBean artist_item_1 = MyApplication.gsonInstance().fromJson(artist_item, SearchSongBean.ResultBean.SongsBean.ArtistsBean.class);
+                            SearchSongBean.ResultBean.SongsBean.ArBean artist_item_1 = MyApplication.gsonInstance().fromJson(artist_item, SearchSongBean.ResultBean.SongsBean.ArBean.class);
                             String name = artist_item_1.getName();
                             if (sb.length() > 0) {//该步即不会第一位有逗号，也防止最后一位拼接逗号！
                                 sb.append("/");
                             }
                             sb.append(name);
                         }
-                        Log.i(TAG, "sb name = " + sb.toString());
+//                        Log.i(TAG, "sb name = " + sb.toString());
                         artists_name_Beans.add(sb.toString());
-                        //给artists做分析/////////////////////////////////////////
-                        //给album做分析/////////////////////////////////////////
-                        JsonObject album = songAsJsonObject.get("album").getAsJsonObject();
+                        //给artists做分析--end/////////////////////////////////////////
+                        //给album做分析--start/////////////////////////////////////////
+                        JsonObject album = a_songAsJsonObject.getAsJsonObject("al");
                         String album_name = album.get("name").getAsString();
                         album_name_Beans.add(album_name);
-                        //给album做分析/////////////////////////////////////////
+                        //给album做分析--end/////////////////////////////////////////
 
                     }
-                    Log.i(TAG, "dengdb111--------22222222222222222 = " + artists_name_Beans.size());
+//                    Log.i(TAG, "dengdb111--------22222222222222222 = " + artists_name_Beans.size());
                 }
                 getActivity().runOnUiThread(new Runnable() {
 
@@ -192,8 +193,8 @@ public class NeteaseFragment extends Fragment implements SwipeRefreshLayout.OnRe
                                     @Override
                                     public void run() {
                                         SearchSongBean.ResultBean.SongsBean item = neteaseSearchFragmentRecyclerViewAdapter.getItem(position);
-                                        String song_id = item.getId();
-                                        String playUrl = HttpUtil.getPlayUrl(song_id);
+                                        int a_song_id = item.getId().intValue();
+                                        String playUrl = HttpUtil.getPlayUrl(a_song_id);
                                         Intent intent = new Intent(getActivity(), MainActivity.class);
                                         intent.putExtra("song_play_url", playUrl);
                                         intent.setAction("neteasefragment_song_play_url");

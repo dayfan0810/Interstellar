@@ -160,7 +160,7 @@ public class LoginPresenterCompl implements ILoginPresenter {
 
 
     private void asyncValidate(final String account) {
-        //account:http://39.108.131.225:3000/login?email=mr_day@163.com&password=razrjay1234
+        //account:http://1.15.151.241:3000/login?email=mr_day@163.com&password=WYrazrjay12
         new Thread(() -> {
             HttpUtil.getHttpUtilInstance().sendOkHttpRequest(account, new Callback() {
                 @Override

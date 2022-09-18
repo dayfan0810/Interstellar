@@ -242,7 +242,7 @@ public class CloudPanBean {
             this.fileName = fileName;
         }
 
-        public static class SimpleSongBean implements Serializable{
+        public static class SimpleSongBean implements Serializable {
             /**
              * name : 雨幕
              * id : 1396607965
@@ -281,7 +281,7 @@ public class CloudPanBean {
              */
 
             private String name;
-            private String
+            private int
                     id;
             private double
                     pst;
@@ -341,12 +341,12 @@ public class CloudPanBean {
                 this.name = name;
             }
 
-            public String
+            public int
             getId() {
                 return id;
             }
 
-            public void setId(String
+            public void setId(int
                                       id) {
                 this.id = id;
             }

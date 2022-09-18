@@ -15,7 +15,8 @@ public class Constant {
     static boolean isWifi = NetworkUtils.isConnectWifi(MyApplication.getInstance());
     //网易云音乐接口
 //    public static final String NETEASEBASE = "http://musicapi.leanapp.cn/";
-    public static final String NETEASEBASE = isWifi ? "http://42.192.43.247:3000/" : "http://39.108.131.225:3000/";
+//    public static final String NETEASEBASE = isWifi ? "http://42.192.43.247:3000/" : "http://39.108.131.225:3000/";
+    public static final String NETEASEBASE = "http://1.15.151.241:3000/";
 
 
     //mv 排行
@@ -42,9 +43,9 @@ public class Constant {
     //获取
     public static final String NETEASE_MYPLAYLIST_DETAIL_SONG_DETAIL = NETEASEBASE + "song/detail?ids=";
 
-    //搜索建议http://39.108.131.225:3000/search/suggest?keywords=林俊杰
+    //搜索建议http://1.15.151.241:3000/search/suggest?keywords=林俊杰
     public static final String NETEASE_SEARCH_SUGGEST = NETEASEBASE + "search/suggest?keywords=";
-    //搜索视频  http://39.108.131.225:3000/search?keywords=林俊杰&type=1014
+    //搜索视频  http://1.15.151.241:3000/search?keywords=林俊杰&type=1014
     public static final String NETEASE_SEARCH = NETEASEBASE + "search?keywords=";
     public static final String NETEASE_HOT_SEARCH_DETAIL = NETEASEBASE + "search/hot/detail";
     public static final String NETEASE_SONG_PLAY_URL_BY_ID = NETEASEBASE + "song/url?id=";

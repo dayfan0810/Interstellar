@@ -108,7 +108,7 @@ public class HttpUtil {
     /*
     此方法是传入歌曲的ID,然后利用GSON解析
      */
-    public static String getPlayUrl(String song_id) {
+    public static String getPlayUrl(int song_id) {
         JsonObject song_play_url_by_id_obj = HttpUtil.getResposeJsonObject(Constant.NETEASE_SONG_PLAY_URL_BY_ID + song_id);
         JsonArray data = song_play_url_by_id_obj.get("data").getAsJsonArray();
         StringBuilder stringBuilder = new StringBuilder();

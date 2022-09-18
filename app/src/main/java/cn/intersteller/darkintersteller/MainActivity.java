@@ -569,7 +569,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             requestURL_From_Fragment_msg(mvID);
         } else if (mvitem instanceof CloudPanBean.DataBean.SimpleSongBean) {
             Log.i("info", "CloudPanBean");
-            String id = ((CloudPanBean.DataBean.SimpleSongBean) mvitem).getId();
+            int id = ((CloudPanBean.DataBean.SimpleSongBean) mvitem).getId();
 
 
             new Thread(() -> {

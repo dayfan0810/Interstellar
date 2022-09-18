@@ -1,17 +1,15 @@
 package cn.intersteller.darkintersteller.bean;
 
-import java.io.Serializable;
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class SearchSongBean {
 
-    /**
-     * result : {"songs":[{"id":536570450,"name":"魔术与歌曲：告白气球","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":13228454,"name":"蔡威泽","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":37579061,"name":"2018年中央电视台春节联欢晚会","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1518652800000,"size":41,"copyrightId":677016,"status":0,"picId":109951163142162220,"mark":0},"duration":214203,"copyrightId":677016,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":8},{"id":298317,"name":"屋顶","artists":[{"id":9612,"name":"温岚","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":29597,"name":"有点野","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":996595200000,"size":11,"copyrightId":1416500,"status":40,"picId":74766790689775,"mark":0},"duration":319000,"copyrightId":1416500,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":8192},{"id":210049,"name":"布拉格广场","artists":[{"id":7219,"name":"蔡依林","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":21349,"name":"看我72变","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1046966400007,"size":11,"copyrightId":5003,"status":1,"transNames":["Magic"],"picId":109951163611523280,"mark":0},"duration":294000,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":186025,"fee":8,"rUrl":null,"mark":270336},{"id":210062,"name":"骑士精神","artists":[{"id":7219,"name":"蔡依林","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":21349,"name":"看我72变","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1046966400007,"size":11,"copyrightId":5003,"status":1,"transNames":["Magic"],"picId":109951163611523280,"mark":0},"duration":257000,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":186031,"fee":8,"rUrl":null,"mark":8192},{"id":255020,"name":"刀马旦","artists":[{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":25475,"name":"Promise","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1002931200000,"size":13,"copyrightId":7001,"status":1,"picId":109951163250111840,"mark":0},"duration":193000,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":5287134,"fee":8,"rUrl":null,"mark":8192},{"id":298101,"name":"祝我生日快乐 (Live)","artists":[{"id":9612,"name":"温岚","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":29585,"name":"爱回温 新歌+精选","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1117555200000,"size":24,"copyrightId":1416500,"status":40,"picId":74766790701566,"mark":0},"duration":258000,"copyrightId":1416500,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":8192},{"id":5257138,"name":"屋顶","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":9612,"name":"温岚","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":512175,"name":"男女情歌对唱冠军全记录","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1170691200000,"size":26,"copyrightId":7001,"status":3,"picId":91259465122701,"mark":0},"duration":319373,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":406346416,"name":"海盗","artists":[{"id":7219,"name":"蔡依林","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":34559090,"name":"玻璃情缘 (对唱篇) Vol.One","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1078848000007,"size":6,"copyrightId":13009,"status":3,"picId":1378787583916322,"mark":0},"duration":277394,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":29393641,"name":"布拉格广场","artists":[{"id":7219,"name":"蔡依林","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":3017298,"name":"巨星金曲-合唱篇","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1408982400007,"size":23,"copyrightId":7001,"status":0,"picId":2538772348541160,"mark":0},"duration":294000,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":186064,"name":"刀马旦","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":18909,"name":"Partners 拍档","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1017590400000,"size":13,"copyrightId":5003,"status":3,"picId":84662395339570,"alia":["周杰伦方文山联手创作精选"],"mark":0},"duration":192000,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":298110,"name":"屋顶","artists":[{"id":9612,"name":"温岚","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":29585,"name":"爱回温 新歌+精选","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1117555200000,"size":24,"copyrightId":1416500,"status":40,"picId":74766790701566,"mark":0},"duration":319000,"copyrightId":1416500,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":8192},{"id":34167344,"name":"眼泪成诗(Live)","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":9272,"name":"孙燕姿","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":3271338,"name":"热门华语278","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1388505600004,"size":237,"copyrightId":0,"status":2,"picId":3411784581986489,"mark":0},"duration":174106,"copyrightId":0,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":524288},{"id":288382,"name":"康定情歌","artists":[{"id":9278,"name":"宋祖英","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6456,"name":"周华健","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":28609,"name":"台北小巨蛋音乐会","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1316880000007,"size":14,"copyrightId":0,"status":1,"picId":112150186051141,"mark":0},"duration":234000,"copyrightId":0,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":0},{"id":186089,"name":"你比从前快乐","artists":[{"id":5360,"name":"吴宗宪","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":18909,"name":"Partners 拍档","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1017590400000,"size":13,"copyrightId":5003,"status":3,"picId":84662395339570,"alia":["周杰伦方文山联手创作精选"],"mark":0},"duration":235000,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":5337375,"fee":8,"rUrl":null,"mark":0},{"id":29947073,"name":"夜店咖","artists":[{"id":1033013,"name":"嘻游记","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":3087231,"name":"嘻游记","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1420732800007,"size":3,"copyrightId":0,"status":0,"picId":2881819976558362,"mark":0},"duration":170000,"copyrightId":14028,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":185750,"name":"刀马旦","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":18884,"name":"我们都爱这个伦！","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1195142400000,"size":25,"copyrightId":5003,"status":40,"picId":97856534884248,"mark":0},"duration":192862,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":5257160,"name":"刀马旦","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":512175,"name":"男女情歌对唱冠军全记录","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1170691200000,"size":26,"copyrightId":7001,"status":3,"picId":91259465122701,"mark":0},"duration":192340,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":288750,"name":"山歌好比春江水.多谢了(Live)","artists":[{"id":9278,"name":"宋祖英","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":28650,"name":"中国北京鸟巢夏季音乐会","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1248710400000,"size":23,"copyrightId":0,"status":1,"picId":871912720826764,"mark":0},"duration":287000,"copyrightId":0,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":0},{"id":1372847156,"name":"刀马旦","artists":[{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":79885567,"name":"CoCo 李玟 You&I 经典全纪录","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1562860800000,"size":19,"copyrightId":7001,"status":3,"picId":109951164207044580,"mark":0},"duration":191164,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":270336},{"id":288371,"name":"黄浦江深","artists":[{"id":9278,"name":"宋祖英","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":28609,"name":"台北小巨蛋音乐会","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1316880000007,"size":14,"copyrightId":0,"status":1,"picId":112150186051141,"mark":0},"duration":242000,"copyrightId":0,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":0},{"id":254832,"name":"刀马旦","artists":[{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":25460,"name":"1999-2008年 豪华典藏精选","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1210867200000,"size":30,"copyrightId":7001,"status":1,"picId":105553116281870,"mark":0},"duration":192340,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":5268828,"name":"刀马旦","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":512879,"name":"2002 国语冠军金选 24首","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1044288000000,"size":24,"copyrightId":5003,"status":1,"picId":75866302334161,"mark":0},"duration":192862,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":288820,"name":"结尾曲-友谊地久天长(Live)","artists":[{"id":9278,"name":"宋祖英","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":3707,"name":"郎朗","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":189020,"name":"多明戈","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":28650,"name":"中国北京鸟巢夏季音乐会","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1248710400000,"size":23,"copyrightId":0,"status":1,"picId":871912720826764,"mark":0},"duration":416000,"copyrightId":0,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":0},{"id":29393649,"name":"刀马旦","artists":[{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":3017298,"name":"巨星金曲-合唱篇","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1408982400007,"size":23,"copyrightId":7001,"status":0,"picId":2538772348541160,"mark":0},"duration":192862,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":29808783,"name":"夜店咖","artists":[{"id":1033013,"name":"嘻游记","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":3081217,"name":"夜店咖","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1420732800007,"size":1,"copyrightId":0,"status":0,"picId":2540971374163956,"mark":0},"duration":170000,"copyrightId":0,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":0},{"id":186082,"name":"动心","artists":[{"id":9612,"name":"温岚","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":188664,"name":"林迈可","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":18909,"name":"Partners 拍档","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1017590400000,"size":13,"copyrightId":5003,"status":3,"picId":84662395339570,"alia":["周杰伦方文山联手创作精选"],"mark":0},"duration":289000,"copyrightId":14021,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":254942,"name":"刀马旦","artists":[{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":25471,"name":"爱琴海(新歌+电音精选)","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1022860800000,"size":22,"copyrightId":7001,"status":3,"picId":63771674425172,"mark":0},"duration":214857,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":186071,"name":"禁止悲伤","artists":[{"id":9943,"name":"许茹芸","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":18909,"name":"Partners 拍档","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1017590400000,"size":13,"copyrightId":5003,"status":3,"picId":84662395339570,"alia":["周杰伦方文山联手创作精选"],"mark":0},"duration":329000,"copyrightId":5003,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":28977076,"name":"If","artists":[{"id":13197,"name":"温拿","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":2489195,"name":"天台 电影原声带","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1370188800007,"size":35,"copyrightId":5003,"status":1,"picId":2367248534662893,"alia":["THE ROOFTOP A Jay Chou Film OST"],"mark":0},"duration":157000,"copyrightId":7003,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":270336},{"id":186077,"name":"夜空的精灵","artists":[{"id":2849,"name":"古巨基","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":18909,"name":"Partners 拍档","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1017590400000,"size":13,"copyrightId":5003,"status":3,"picId":84662395339570,"alia":["周杰伦方文山联手创作精选"],"mark":0},"duration":250000,"copyrightId":5003,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0}],"songCount":600}
-     * code : 200
-     */
-
+    @SerializedName("result")
     private ResultBean result;
-    private int code;
+    @SerializedName("code")
+    private Integer code;
 
     public ResultBean getResult() {
         return result;
@@ -21,29 +19,28 @@ public class SearchSongBean {
         this.result = result;
     }
 
-    public int getCode() {
+    public Integer getCode() {
         return code;
     }
 
-    public void setCode(int code) {
+    public void setCode(Integer code) {
         this.code = code;
     }
 
     public static class ResultBean {
-        /**
-         * songs : [{"id":536570450,"name":"魔术与歌曲：告白气球","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":13228454,"name":"蔡威泽","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":37579061,"name":"2018年中央电视台春节联欢晚会","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1518652800000,"size":41,"copyrightId":677016,"status":0,"picId":109951163142162220,"mark":0},"duration":214203,"copyrightId":677016,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":8},{"id":298317,"name":"屋顶","artists":[{"id":9612,"name":"温岚","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":29597,"name":"有点野","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":996595200000,"size":11,"copyrightId":1416500,"status":40,"picId":74766790689775,"mark":0},"duration":319000,"copyrightId":1416500,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":8192},{"id":210049,"name":"布拉格广场","artists":[{"id":7219,"name":"蔡依林","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":21349,"name":"看我72变","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1046966400007,"size":11,"copyrightId":5003,"status":1,"transNames":["Magic"],"picId":109951163611523280,"mark":0},"duration":294000,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":186025,"fee":8,"rUrl":null,"mark":270336},{"id":210062,"name":"骑士精神","artists":[{"id":7219,"name":"蔡依林","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":21349,"name":"看我72变","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1046966400007,"size":11,"copyrightId":5003,"status":1,"transNames":["Magic"],"picId":109951163611523280,"mark":0},"duration":257000,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":186031,"fee":8,"rUrl":null,"mark":8192},{"id":255020,"name":"刀马旦","artists":[{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":25475,"name":"Promise","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1002931200000,"size":13,"copyrightId":7001,"status":1,"picId":109951163250111840,"mark":0},"duration":193000,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":5287134,"fee":8,"rUrl":null,"mark":8192},{"id":298101,"name":"祝我生日快乐 (Live)","artists":[{"id":9612,"name":"温岚","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":29585,"name":"爱回温 新歌+精选","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1117555200000,"size":24,"copyrightId":1416500,"status":40,"picId":74766790701566,"mark":0},"duration":258000,"copyrightId":1416500,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":8192},{"id":5257138,"name":"屋顶","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":9612,"name":"温岚","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":512175,"name":"男女情歌对唱冠军全记录","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1170691200000,"size":26,"copyrightId":7001,"status":3,"picId":91259465122701,"mark":0},"duration":319373,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":406346416,"name":"海盗","artists":[{"id":7219,"name":"蔡依林","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":34559090,"name":"玻璃情缘 (对唱篇) Vol.One","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1078848000007,"size":6,"copyrightId":13009,"status":3,"picId":1378787583916322,"mark":0},"duration":277394,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":29393641,"name":"布拉格广场","artists":[{"id":7219,"name":"蔡依林","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":3017298,"name":"巨星金曲-合唱篇","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1408982400007,"size":23,"copyrightId":7001,"status":0,"picId":2538772348541160,"mark":0},"duration":294000,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":186064,"name":"刀马旦","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":18909,"name":"Partners 拍档","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1017590400000,"size":13,"copyrightId":5003,"status":3,"picId":84662395339570,"alia":["周杰伦方文山联手创作精选"],"mark":0},"duration":192000,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":298110,"name":"屋顶","artists":[{"id":9612,"name":"温岚","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":29585,"name":"爱回温 新歌+精选","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1117555200000,"size":24,"copyrightId":1416500,"status":40,"picId":74766790701566,"mark":0},"duration":319000,"copyrightId":1416500,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":8192},{"id":34167344,"name":"眼泪成诗(Live)","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":9272,"name":"孙燕姿","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":3271338,"name":"热门华语278","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1388505600004,"size":237,"copyrightId":0,"status":2,"picId":3411784581986489,"mark":0},"duration":174106,"copyrightId":0,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":524288},{"id":288382,"name":"康定情歌","artists":[{"id":9278,"name":"宋祖英","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6456,"name":"周华健","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":28609,"name":"台北小巨蛋音乐会","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1316880000007,"size":14,"copyrightId":0,"status":1,"picId":112150186051141,"mark":0},"duration":234000,"copyrightId":0,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":0},{"id":186089,"name":"你比从前快乐","artists":[{"id":5360,"name":"吴宗宪","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":18909,"name":"Partners 拍档","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1017590400000,"size":13,"copyrightId":5003,"status":3,"picId":84662395339570,"alia":["周杰伦方文山联手创作精选"],"mark":0},"duration":235000,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":5337375,"fee":8,"rUrl":null,"mark":0},{"id":29947073,"name":"夜店咖","artists":[{"id":1033013,"name":"嘻游记","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":3087231,"name":"嘻游记","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1420732800007,"size":3,"copyrightId":0,"status":0,"picId":2881819976558362,"mark":0},"duration":170000,"copyrightId":14028,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":185750,"name":"刀马旦","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":18884,"name":"我们都爱这个伦！","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1195142400000,"size":25,"copyrightId":5003,"status":40,"picId":97856534884248,"mark":0},"duration":192862,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":5257160,"name":"刀马旦","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":512175,"name":"男女情歌对唱冠军全记录","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1170691200000,"size":26,"copyrightId":7001,"status":3,"picId":91259465122701,"mark":0},"duration":192340,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":288750,"name":"山歌好比春江水.多谢了(Live)","artists":[{"id":9278,"name":"宋祖英","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":28650,"name":"中国北京鸟巢夏季音乐会","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1248710400000,"size":23,"copyrightId":0,"status":1,"picId":871912720826764,"mark":0},"duration":287000,"copyrightId":0,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":0},{"id":1372847156,"name":"刀马旦","artists":[{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":79885567,"name":"CoCo 李玟 You&I 经典全纪录","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1562860800000,"size":19,"copyrightId":7001,"status":3,"picId":109951164207044580,"mark":0},"duration":191164,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":270336},{"id":288371,"name":"黄浦江深","artists":[{"id":9278,"name":"宋祖英","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":28609,"name":"台北小巨蛋音乐会","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1316880000007,"size":14,"copyrightId":0,"status":1,"picId":112150186051141,"mark":0},"duration":242000,"copyrightId":0,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":0},{"id":254832,"name":"刀马旦","artists":[{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":25460,"name":"1999-2008年 豪华典藏精选","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1210867200000,"size":30,"copyrightId":7001,"status":1,"picId":105553116281870,"mark":0},"duration":192340,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":5268828,"name":"刀马旦","artists":[{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":512879,"name":"2002 国语冠军金选 24首","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1044288000000,"size":24,"copyrightId":5003,"status":1,"picId":75866302334161,"mark":0},"duration":192862,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":288820,"name":"结尾曲-友谊地久天长(Live)","artists":[{"id":9278,"name":"宋祖英","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":3707,"name":"郎朗","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":189020,"name":"多明戈","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":28650,"name":"中国北京鸟巢夏季音乐会","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1248710400000,"size":23,"copyrightId":0,"status":1,"picId":871912720826764,"mark":0},"duration":416000,"copyrightId":0,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":0},{"id":29393649,"name":"刀马旦","artists":[{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":3017298,"name":"巨星金曲-合唱篇","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1408982400007,"size":23,"copyrightId":7001,"status":0,"picId":2538772348541160,"mark":0},"duration":192862,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":29808783,"name":"夜店咖","artists":[{"id":1033013,"name":"嘻游记","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":3081217,"name":"夜店咖","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1420732800007,"size":1,"copyrightId":0,"status":0,"picId":2540971374163956,"mark":0},"duration":170000,"copyrightId":0,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":0,"rUrl":null,"mark":0},{"id":186082,"name":"动心","artists":[{"id":9612,"name":"温岚","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":188664,"name":"林迈可","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":18909,"name":"Partners 拍档","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1017590400000,"size":13,"copyrightId":5003,"status":3,"picId":84662395339570,"alia":["周杰伦方文山联手创作精选"],"mark":0},"duration":289000,"copyrightId":14021,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":254942,"name":"刀马旦","artists":[{"id":8331,"name":"李玟","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":25471,"name":"爱琴海(新歌+电音精选)","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1022860800000,"size":22,"copyrightId":7001,"status":3,"picId":63771674425172,"mark":0},"duration":214857,"copyrightId":7001,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":186071,"name":"禁止悲伤","artists":[{"id":9943,"name":"许茹芸","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":18909,"name":"Partners 拍档","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1017590400000,"size":13,"copyrightId":5003,"status":3,"picId":84662395339570,"alia":["周杰伦方文山联手创作精选"],"mark":0},"duration":329000,"copyrightId":5003,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0},{"id":28977076,"name":"If","artists":[{"id":13197,"name":"温拿","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":2489195,"name":"天台 电影原声带","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1370188800007,"size":35,"copyrightId":5003,"status":1,"picId":2367248534662893,"alia":["THE ROOFTOP A Jay Chou Film OST"],"mark":0},"duration":157000,"copyrightId":7003,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":270336},{"id":186077,"name":"夜空的精灵","artists":[{"id":2849,"name":"古巨基","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}],"album":{"id":18909,"name":"Partners 拍档","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1017590400000,"size":13,"copyrightId":5003,"status":3,"picId":84662395339570,"alia":["周杰伦方文山联手创作精选"],"mark":0},"duration":250000,"copyrightId":5003,"status":0,"alias":[],"rtype":0,"ftype":0,"mvid":0,"fee":8,"rUrl":null,"mark":0}]
-         * songCount : 600
-         */
-
-        private int songCount;
+        @SerializedName("searchQcReminder")
+        private Object searchQcReminder;
+        @SerializedName("songs")
         private List<SongsBean> songs;
+        @SerializedName("songCount")
+        private Integer songCount;
 
-        public int getSongCount() {
-            return songCount;
+        public Object getSearchQcReminder() {
+            return searchQcReminder;
         }
 
-        public void setSongCount(int songCount) {
-            this.songCount = songCount;
+        public void setSearchQcReminder(Object searchQcReminder) {
+            this.searchQcReminder = searchQcReminder;
         }
 
         public List<SongsBean> getSongs() {
@@ -54,38 +51,107 @@ public class SearchSongBean {
             this.songs = songs;
         }
 
-        public static class SongsBean implements Serializable {
-            /**
-             * id : 536570450
-             * name : 魔术与歌曲：告白气球
-             * artists : [{"id":6452,"name":"周杰伦","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},{"id":13228454,"name":"蔡威泽","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}]
-             * album : {"id":37579061,"name":"2018年中央电视台春节联欢晚会","artist":{"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null},"publishTime":1518652800000,"size":41,"copyrightId":677016,"status":0,"picId":109951163142162220,"mark":0}
-             * duration : 214203
-             * copyrightId : 677016
-             * status : 0
-             * alias : []
-             * rtype : 0
-             * ftype : 0
-             * mvid : 0
-             * fee : 0
-             * rUrl : null
-             * mark : 8
-             */
+        public Integer getSongCount() {
+            return songCount;
+        }
 
-            private String id;
+        public void setSongCount(Integer songCount) {
+            this.songCount = songCount;
+        }
+
+        public static class SongsBean {
+            @SerializedName("name")
             private String name;
-            private AlbumBean album;
-            private int duration;
-            private int copyrightId;
-            private List<ArtistsBean> artists;
-
-            public String getId() {
-                return id;
-            }
-
-            public void setId(String id) {
-                this.id = id;
-            }
+            @SerializedName("id")
+            private Integer id;
+            @SerializedName("pst")
+            private Integer pst;
+            @SerializedName("t")
+            private Integer t;
+            @SerializedName("ar")
+            private List<ArBean> ar;
+            @SerializedName("alia")
+            private List<?> alia;
+            @SerializedName("pop")
+            private Integer pop;
+            @SerializedName("st")
+            private Integer st;
+            @SerializedName("rt")
+            private String rt;
+            @SerializedName("fee")
+            private Integer fee;
+            @SerializedName("v")
+            private Integer v;
+            @SerializedName("crbt")
+            private Object crbt;
+            @SerializedName("cf")
+            private String cf;
+            @SerializedName("al")
+            private AlBean al;
+            @SerializedName("dt")
+            private Integer dt;
+            @SerializedName("h")
+            private HBean h;
+            @SerializedName("m")
+            private MBean m;
+            @SerializedName("l")
+            private LBean l;
+            @SerializedName("sq")
+            private SqBean sq;
+            @SerializedName("hr")
+            private Object hr;
+            @SerializedName("a")
+            private Object a;
+            @SerializedName("cd")
+            private String cd;
+            @SerializedName("no")
+            private Integer no;
+            @SerializedName("rtUrl")
+            private Object rtUrl;
+            @SerializedName("ftype")
+            private Integer ftype;
+            @SerializedName("rtUrls")
+            private List<?> rtUrls;
+            @SerializedName("djId")
+            private Integer djId;
+            @SerializedName("copyright")
+            private Integer copyright;
+            @SerializedName("s_id")
+            private Integer sId;
+            @SerializedName("mark")
+            private Integer mark;
+            @SerializedName("originCoverType")
+            private Integer originCoverType;
+            @SerializedName("originSongSimpleData")
+            private Object originSongSimpleData;
+            @SerializedName("tagPicList")
+            private Object tagPicList;
+            @SerializedName("resourceState")
+            private Boolean resourceState;
+            @SerializedName("version")
+            private Integer version;
+            @SerializedName("songJumpInfo")
+            private Object songJumpInfo;
+            @SerializedName("entertainmentTags")
+            private Object entertainmentTags;
+            @SerializedName("single")
+            private Integer single;
+            @SerializedName("noCopyrightRcmd")
+            private Object noCopyrightRcmd;
+            @SerializedName("rtype")
+            private Integer rtype;
+            @SerializedName("rurl")
+            private Object rurl;
+            @SerializedName("mst")
+            private Integer mst;
+            @SerializedName("cp")
+            private Integer cp;
+            @SerializedName("mv")
+            private Integer mv;
+            @SerializedName("publishTime")
+            private Long publishTime;
+            @SerializedName("privilege")
+            private PrivilegeBean privilege;
 
             public String getName() {
                 return name;
@@ -95,61 +161,385 @@ public class SearchSongBean {
                 this.name = name;
             }
 
-            public AlbumBean getAlbum() {
-                return album;
+            public Integer getId() {
+                return id;
             }
 
-            public void setAlbum(AlbumBean album) {
-                this.album = album;
+            public void setId(Integer id) {
+                this.id = id;
             }
 
-            public int getDuration() {
-                return duration;
+            public Integer getPst() {
+                return pst;
             }
 
-            public void setDuration(int duration) {
-                this.duration = duration;
+            public void setPst(Integer pst) {
+                this.pst = pst;
             }
 
-            public int getCopyrightId() {
-                return copyrightId;
+            public Integer getT() {
+                return t;
             }
 
-            public void setCopyrightId(int copyrightId) {
-                this.copyrightId = copyrightId;
+            public void setT(Integer t) {
+                this.t = t;
             }
 
-            public List<ArtistsBean> getArtists() {
-                return artists;
+            public List<ArBean> getAr() {
+                return ar;
             }
 
-            public void setArtists(List<ArtistsBean> artists) {
-                this.artists = artists;
+            public void setAr(List<ArBean> ar) {
+                this.ar = ar;
             }
 
-            public static class AlbumBean {
-                /**
-                 * id : 37579061
-                 * name : 2018年中央电视台春节联欢晚会
-                 * artist : {"id":0,"name":"","picUrl":null,"alias":[],"albumSize":0,"picId":0,"img1v1Url":"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg","img1v1":0,"trans":null}
-                 * publishTime : 1518652800000
-                 * size : 41
-                 * copyrightId : 677016
-                 * status : 0
-                 * picId : 109951163142162220
-                 * mark : 0
-                 */
+            public List<?> getAlia() {
+                return alia;
+            }
 
-                private int id;
+            public void setAlia(List<?> alia) {
+                this.alia = alia;
+            }
+
+            public Integer getPop() {
+                return pop;
+            }
+
+            public void setPop(Integer pop) {
+                this.pop = pop;
+            }
+
+            public Integer getSt() {
+                return st;
+            }
+
+            public void setSt(Integer st) {
+                this.st = st;
+            }
+
+            public String getRt() {
+                return rt;
+            }
+
+            public void setRt(String rt) {
+                this.rt = rt;
+            }
+
+            public Integer getFee() {
+                return fee;
+            }
+
+            public void setFee(Integer fee) {
+                this.fee = fee;
+            }
+
+            public Integer getV() {
+                return v;
+            }
+
+            public void setV(Integer v) {
+                this.v = v;
+            }
+
+            public Object getCrbt() {
+                return crbt;
+            }
+
+            public void setCrbt(Object crbt) {
+                this.crbt = crbt;
+            }
+
+            public String getCf() {
+                return cf;
+            }
+
+            public void setCf(String cf) {
+                this.cf = cf;
+            }
+
+            public AlBean getAl() {
+                return al;
+            }
+
+            public void setAl(AlBean al) {
+                this.al = al;
+            }
+
+            public Integer getDt() {
+                return dt;
+            }
+
+            public void setDt(Integer dt) {
+                this.dt = dt;
+            }
+
+            public HBean getH() {
+                return h;
+            }
+
+            public void setH(HBean h) {
+                this.h = h;
+            }
+
+            public MBean getM() {
+                return m;
+            }
+
+            public void setM(MBean m) {
+                this.m = m;
+            }
+
+            public LBean getL() {
+                return l;
+            }
+
+            public void setL(LBean l) {
+                this.l = l;
+            }
+
+            public SqBean getSq() {
+                return sq;
+            }
+
+            public void setSq(SqBean sq) {
+                this.sq = sq;
+            }
+
+            public Object getHr() {
+                return hr;
+            }
+
+            public void setHr(Object hr) {
+                this.hr = hr;
+            }
+
+            public Object getA() {
+                return a;
+            }
+
+            public void setA(Object a) {
+                this.a = a;
+            }
+
+            public String getCd() {
+                return cd;
+            }
+
+            public void setCd(String cd) {
+                this.cd = cd;
+            }
+
+            public Integer getNo() {
+                return no;
+            }
+
+            public void setNo(Integer no) {
+                this.no = no;
+            }
+
+            public Object getRtUrl() {
+                return rtUrl;
+            }
+
+            public void setRtUrl(Object rtUrl) {
+                this.rtUrl = rtUrl;
+            }
+
+            public Integer getFtype() {
+                return ftype;
+            }
+
+            public void setFtype(Integer ftype) {
+                this.ftype = ftype;
+            }
+
+            public List<?> getRtUrls() {
+                return rtUrls;
+            }
+
+            public void setRtUrls(List<?> rtUrls) {
+                this.rtUrls = rtUrls;
+            }
+
+            public Integer getDjId() {
+                return djId;
+            }
+
+            public void setDjId(Integer djId) {
+                this.djId = djId;
+            }
+
+            public Integer getCopyright() {
+                return copyright;
+            }
+
+            public void setCopyright(Integer copyright) {
+                this.copyright = copyright;
+            }
+
+            public Integer getSId() {
+                return sId;
+            }
+
+            public void setSId(Integer sId) {
+                this.sId = sId;
+            }
+
+            public Integer getMark() {
+                return mark;
+            }
+
+            public void setMark(Integer mark) {
+                this.mark = mark;
+            }
+
+            public Integer getOriginCoverType() {
+                return originCoverType;
+            }
+
+            public void setOriginCoverType(Integer originCoverType) {
+                this.originCoverType = originCoverType;
+            }
+
+            public Object getOriginSongSimpleData() {
+                return originSongSimpleData;
+            }
+
+            public void setOriginSongSimpleData(Object originSongSimpleData) {
+                this.originSongSimpleData = originSongSimpleData;
+            }
+
+            public Object getTagPicList() {
+                return tagPicList;
+            }
+
+            public void setTagPicList(Object tagPicList) {
+                this.tagPicList = tagPicList;
+            }
+
+            public Boolean getResourceState() {
+                return resourceState;
+            }
+
+            public void setResourceState(Boolean resourceState) {
+                this.resourceState = resourceState;
+            }
+
+            public Integer getVersion() {
+                return version;
+            }
+
+            public void setVersion(Integer version) {
+                this.version = version;
+            }
+
+            public Object getSongJumpInfo() {
+                return songJumpInfo;
+            }
+
+            public void setSongJumpInfo(Object songJumpInfo) {
+                this.songJumpInfo = songJumpInfo;
+            }
+
+            public Object getEntertainmentTags() {
+                return entertainmentTags;
+            }
+
+            public void setEntertainmentTags(Object entertainmentTags) {
+                this.entertainmentTags = entertainmentTags;
+            }
+
+            public Integer getSingle() {
+                return single;
+            }
+
+            public void setSingle(Integer single) {
+                this.single = single;
+            }
+
+            public Object getNoCopyrightRcmd() {
+                return noCopyrightRcmd;
+            }
+
+            public void setNoCopyrightRcmd(Object noCopyrightRcmd) {
+                this.noCopyrightRcmd = noCopyrightRcmd;
+            }
+
+            public Integer getRtype() {
+                return rtype;
+            }
+
+            public void setRtype(Integer rtype) {
+                this.rtype = rtype;
+            }
+
+            public Object getRurl() {
+                return rurl;
+            }
+
+            public void setRurl(Object rurl) {
+                this.rurl = rurl;
+            }
+
+            public Integer getMst() {
+                return mst;
+            }
+
+            public void setMst(Integer mst) {
+                this.mst = mst;
+            }
+
+            public Integer getCp() {
+                return cp;
+            }
+
+            public void setCp(Integer cp) {
+                this.cp = cp;
+            }
+
+            public Integer getMv() {
+                return mv;
+            }
+
+            public void setMv(Integer mv) {
+                this.mv = mv;
+            }
+
+            public Long getPublishTime() {
+                return publishTime;
+            }
+
+            public void setPublishTime(Long publishTime) {
+                this.publishTime = publishTime;
+            }
+
+            public PrivilegeBean getPrivilege() {
+                return privilege;
+            }
+
+            public void setPrivilege(PrivilegeBean privilege) {
+                this.privilege = privilege;
+            }
+
+            public static class AlBean {
+                @SerializedName("id")
+                private Integer id;
+                @SerializedName("name")
                 private String name;
-                private ArtistBean artist;
-                private long picId;
+                @SerializedName("picUrl")
+                private String picUrl;
+                @SerializedName("tns")
+                private List<?> tns;
+                @SerializedName("pic_str")
+                private String picStr;
+                @SerializedName("pic")
+                private Long pic;
 
-                public int getId() {
+                public Integer getId() {
                     return id;
                 }
 
-                public void setId(int id) {
+                public void setId(Integer id) {
                     this.id = id;
                 }
 
@@ -161,203 +551,640 @@ public class SearchSongBean {
                     this.name = name;
                 }
 
-                public ArtistBean getArtist() {
-                    return artist;
-                }
-
-                public void setArtist(ArtistBean artist) {
-                    this.artist = artist;
-                }
-
-                public long getPicId() {
-                    return picId;
-                }
-
-                public void setPicId(long picId) {
-                    this.picId = picId;
-                }
-
-                public static class ArtistBean {
-                    /**
-                     * id : 0
-                     * name :
-                     * picUrl : null
-                     * alias : []
-                     * albumSize : 0
-                     * picId : 0
-                     * img1v1Url : https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg
-                     * img1v1 : 0
-                     * trans : null
-                     */
-
-                    private int id;
-                    private String name;
-                    private Object picUrl;
-                    private int albumSize;
-                    private int picId;
-                    private String img1v1Url;
-                    private int img1v1;
-                    private List<?> alias;
-
-                    public int getId() {
-                        return id;
-                    }
-
-                    public void setId(int id) {
-                        this.id = id;
-                    }
-
-                    public String getName() {
-                        return name;
-                    }
-
-                    public void setName(String name) {
-                        this.name = name;
-                    }
-
-                    public Object getPicUrl() {
-                        return picUrl;
-                    }
-
-                    public void setPicUrl(Object picUrl) {
-                        this.picUrl = picUrl;
-                    }
-
-                    public int getAlbumSize() {
-                        return albumSize;
-                    }
-
-                    public void setAlbumSize(int albumSize) {
-                        this.albumSize = albumSize;
-                    }
-
-                    public int getPicId() {
-                        return picId;
-                    }
-
-                    public void setPicId(int picId) {
-                        this.picId = picId;
-                    }
-
-                    public String getImg1v1Url() {
-                        return img1v1Url;
-                    }
-
-                    public void setImg1v1Url(String img1v1Url) {
-                        this.img1v1Url = img1v1Url;
-                    }
-
-                    public int getImg1v1() {
-                        return img1v1;
-                    }
-
-                    public void setImg1v1(int img1v1) {
-                        this.img1v1 = img1v1;
-                    }
-
-                    public List<?> getAlias() {
-                        return alias;
-                    }
-
-                    public void setAlias(List<?> alias) {
-                        this.alias = alias;
-                    }
-                }
-            }
-
-            public static class ArtistsBean {
-                /**
-                 * id : 6452
-                 * name : 周杰伦
-                 * picUrl : null
-                 * alias : []
-                 * albumSize : 0
-                 * picId : 0
-                 * img1v1Url : https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg
-                 * img1v1 : 0
-                 * trans : null
-                 */
-
-                private int id;
-                private String name;
-                private Object picUrl;
-                private int albumSize;
-                private int picId;
-                private String img1v1Url;
-                private int img1v1;
-                private Object trans;
-                private List<?> alias;
-
-                public int getId() {
-                    return id;
-                }
-
-                public void setId(int id) {
-                    this.id = id;
-                }
-
-                public String getName() {
-                    return name;
-                }
-
-                public void setName(String name) {
-                    this.name = name;
-                }
-
-                public Object getPicUrl() {
+                public String getPicUrl() {
                     return picUrl;
                 }
 
-                public void setPicUrl(Object picUrl) {
+                public void setPicUrl(String picUrl) {
                     this.picUrl = picUrl;
                 }
 
-                public int getAlbumSize() {
-                    return albumSize;
+                public List<?> getTns() {
+                    return tns;
                 }
 
-                public void setAlbumSize(int albumSize) {
-                    this.albumSize = albumSize;
+                public void setTns(List<?> tns) {
+                    this.tns = tns;
                 }
 
-                public int getPicId() {
-                    return picId;
+                public String getPicStr() {
+                    return picStr;
                 }
 
-                public void setPicId(int picId) {
-                    this.picId = picId;
+                public void setPicStr(String picStr) {
+                    this.picStr = picStr;
                 }
 
-                public String getImg1v1Url() {
-                    return img1v1Url;
+                public Long getPic() {
+                    return pic;
                 }
 
-                public void setImg1v1Url(String img1v1Url) {
-                    this.img1v1Url = img1v1Url;
+                public void setPic(Long pic) {
+                    this.pic = pic;
+                }
+            }
+
+            public static class HBean {
+                @SerializedName("br")
+                private Integer br;
+                @SerializedName("fid")
+                private Integer fid;
+                @SerializedName("size")
+                private Integer size;
+                @SerializedName("vd")
+                private Integer vd;
+                @SerializedName("sr")
+                private Integer sr;
+
+                public Integer getBr() {
+                    return br;
                 }
 
-                public int getImg1v1() {
-                    return img1v1;
+                public void setBr(Integer br) {
+                    this.br = br;
                 }
 
-                public void setImg1v1(int img1v1) {
-                    this.img1v1 = img1v1;
+                public Integer getFid() {
+                    return fid;
                 }
 
-                public Object getTrans() {
-                    return trans;
+                public void setFid(Integer fid) {
+                    this.fid = fid;
                 }
 
-                public void setTrans(Object trans) {
-                    this.trans = trans;
+                public Integer getSize() {
+                    return size;
                 }
 
-                public List<?> getAlias() {
+                public void setSize(Integer size) {
+                    this.size = size;
+                }
+
+                public Integer getVd() {
+                    return vd;
+                }
+
+                public void setVd(Integer vd) {
+                    this.vd = vd;
+                }
+
+                public Integer getSr() {
+                    return sr;
+                }
+
+                public void setSr(Integer sr) {
+                    this.sr = sr;
+                }
+            }
+
+            public static class MBean {
+                @SerializedName("br")
+                private Integer br;
+                @SerializedName("fid")
+                private Integer fid;
+                @SerializedName("size")
+                private Integer size;
+                @SerializedName("vd")
+                private Integer vd;
+                @SerializedName("sr")
+                private Integer sr;
+
+                public Integer getBr() {
+                    return br;
+                }
+
+                public void setBr(Integer br) {
+                    this.br = br;
+                }
+
+                public Integer getFid() {
+                    return fid;
+                }
+
+                public void setFid(Integer fid) {
+                    this.fid = fid;
+                }
+
+                public Integer getSize() {
+                    return size;
+                }
+
+                public void setSize(Integer size) {
+                    this.size = size;
+                }
+
+                public Integer getVd() {
+                    return vd;
+                }
+
+                public void setVd(Integer vd) {
+                    this.vd = vd;
+                }
+
+                public Integer getSr() {
+                    return sr;
+                }
+
+                public void setSr(Integer sr) {
+                    this.sr = sr;
+                }
+            }
+
+            public static class LBean {
+                @SerializedName("br")
+                private Integer br;
+                @SerializedName("fid")
+                private Integer fid;
+                @SerializedName("size")
+                private Integer size;
+                @SerializedName("vd")
+                private Integer vd;
+                @SerializedName("sr")
+                private Integer sr;
+
+                public Integer getBr() {
+                    return br;
+                }
+
+                public void setBr(Integer br) {
+                    this.br = br;
+                }
+
+                public Integer getFid() {
+                    return fid;
+                }
+
+                public void setFid(Integer fid) {
+                    this.fid = fid;
+                }
+
+                public Integer getSize() {
+                    return size;
+                }
+
+                public void setSize(Integer size) {
+                    this.size = size;
+                }
+
+                public Integer getVd() {
+                    return vd;
+                }
+
+                public void setVd(Integer vd) {
+                    this.vd = vd;
+                }
+
+                public Integer getSr() {
+                    return sr;
+                }
+
+                public void setSr(Integer sr) {
+                    this.sr = sr;
+                }
+            }
+
+            public static class SqBean {
+                @SerializedName("br")
+                private Integer br;
+                @SerializedName("fid")
+                private Integer fid;
+                @SerializedName("size")
+                private Integer size;
+                @SerializedName("vd")
+                private Integer vd;
+                @SerializedName("sr")
+                private Integer sr;
+
+                public Integer getBr() {
+                    return br;
+                }
+
+                public void setBr(Integer br) {
+                    this.br = br;
+                }
+
+                public Integer getFid() {
+                    return fid;
+                }
+
+                public void setFid(Integer fid) {
+                    this.fid = fid;
+                }
+
+                public Integer getSize() {
+                    return size;
+                }
+
+                public void setSize(Integer size) {
+                    this.size = size;
+                }
+
+                public Integer getVd() {
+                    return vd;
+                }
+
+                public void setVd(Integer vd) {
+                    this.vd = vd;
+                }
+
+                public Integer getSr() {
+                    return sr;
+                }
+
+                public void setSr(Integer sr) {
+                    this.sr = sr;
+                }
+            }
+
+            public static class PrivilegeBean {
+                @SerializedName("id")
+                private Integer id;
+                @SerializedName("fee")
+                private Integer fee;
+                @SerializedName("payed")
+                private Integer payed;
+                @SerializedName("st")
+                private Integer st;
+                @SerializedName("pl")
+                private Integer pl;
+                @SerializedName("dl")
+                private Integer dl;
+                @SerializedName("sp")
+                private Integer sp;
+                @SerializedName("cp")
+                private Integer cp;
+                @SerializedName("subp")
+                private Integer subp;
+                @SerializedName("cs")
+                private Boolean cs;
+                @SerializedName("maxbr")
+                private Integer maxbr;
+                @SerializedName("fl")
+                private Integer fl;
+                @SerializedName("toast")
+                private Boolean toast;
+                @SerializedName("flag")
+                private Integer flag;
+                @SerializedName("preSell")
+                private Boolean preSell;
+                @SerializedName("playMaxbr")
+                private Integer playMaxbr;
+                @SerializedName("downloadMaxbr")
+                private Integer downloadMaxbr;
+                @SerializedName("maxBrLevel")
+                private String maxBrLevel;
+                @SerializedName("playMaxBrLevel")
+                private String playMaxBrLevel;
+                @SerializedName("downloadMaxBrLevel")
+                private String downloadMaxBrLevel;
+                @SerializedName("plLevel")
+                private String plLevel;
+                @SerializedName("dlLevel")
+                private String dlLevel;
+                @SerializedName("flLevel")
+                private String flLevel;
+                @SerializedName("rscl")
+                private Object rscl;
+                @SerializedName("freeTrialPrivilege")
+                private FreeTrialPrivilegeBean freeTrialPrivilege;
+                @SerializedName("chargeInfoList")
+                private List<ChargeInfoListBean> chargeInfoList;
+
+                public Integer getId() {
+                    return id;
+                }
+
+                public void setId(Integer id) {
+                    this.id = id;
+                }
+
+                public Integer getFee() {
+                    return fee;
+                }
+
+                public void setFee(Integer fee) {
+                    this.fee = fee;
+                }
+
+                public Integer getPayed() {
+                    return payed;
+                }
+
+                public void setPayed(Integer payed) {
+                    this.payed = payed;
+                }
+
+                public Integer getSt() {
+                    return st;
+                }
+
+                public void setSt(Integer st) {
+                    this.st = st;
+                }
+
+                public Integer getPl() {
+                    return pl;
+                }
+
+                public void setPl(Integer pl) {
+                    this.pl = pl;
+                }
+
+                public Integer getDl() {
+                    return dl;
+                }
+
+                public void setDl(Integer dl) {
+                    this.dl = dl;
+                }
+
+                public Integer getSp() {
+                    return sp;
+                }
+
+                public void setSp(Integer sp) {
+                    this.sp = sp;
+                }
+
+                public Integer getCp() {
+                    return cp;
+                }
+
+                public void setCp(Integer cp) {
+                    this.cp = cp;
+                }
+
+                public Integer getSubp() {
+                    return subp;
+                }
+
+                public void setSubp(Integer subp) {
+                    this.subp = subp;
+                }
+
+                public Boolean getCs() {
+                    return cs;
+                }
+
+                public void setCs(Boolean cs) {
+                    this.cs = cs;
+                }
+
+                public Integer getMaxbr() {
+                    return maxbr;
+                }
+
+                public void setMaxbr(Integer maxbr) {
+                    this.maxbr = maxbr;
+                }
+
+                public Integer getFl() {
+                    return fl;
+                }
+
+                public void setFl(Integer fl) {
+                    this.fl = fl;
+                }
+
+                public Boolean getToast() {
+                    return toast;
+                }
+
+                public void setToast(Boolean toast) {
+                    this.toast = toast;
+                }
+
+                public Integer getFlag() {
+                    return flag;
+                }
+
+                public void setFlag(Integer flag) {
+                    this.flag = flag;
+                }
+
+                public Boolean getPreSell() {
+                    return preSell;
+                }
+
+                public void setPreSell(Boolean preSell) {
+                    this.preSell = preSell;
+                }
+
+                public Integer getPlayMaxbr() {
+                    return playMaxbr;
+                }
+
+                public void setPlayMaxbr(Integer playMaxbr) {
+                    this.playMaxbr = playMaxbr;
+                }
+
+                public Integer getDownloadMaxbr() {
+                    return downloadMaxbr;
+                }
+
+                public void setDownloadMaxbr(Integer downloadMaxbr) {
+                    this.downloadMaxbr = downloadMaxbr;
+                }
+
+                public String getMaxBrLevel() {
+                    return maxBrLevel;
+                }
+
+                public void setMaxBrLevel(String maxBrLevel) {
+                    this.maxBrLevel = maxBrLevel;
+                }
+
+                public String getPlayMaxBrLevel() {
+                    return playMaxBrLevel;
+                }
+
+                public void setPlayMaxBrLevel(String playMaxBrLevel) {
+                    this.playMaxBrLevel = playMaxBrLevel;
+                }
+
+                public String getDownloadMaxBrLevel() {
+                    return downloadMaxBrLevel;
+                }
+
+                public void setDownloadMaxBrLevel(String downloadMaxBrLevel) {
+                    this.downloadMaxBrLevel = downloadMaxBrLevel;
+                }
+
+                public String getPlLevel() {
+                    return plLevel;
+                }
+
+                public void setPlLevel(String plLevel) {
+                    this.plLevel = plLevel;
+                }
+
+                public String getDlLevel() {
+                    return dlLevel;
+                }
+
+                public void setDlLevel(String dlLevel) {
+                    this.dlLevel = dlLevel;
+                }
+
+                public String getFlLevel() {
+                    return flLevel;
+                }
+
+                public void setFlLevel(String flLevel) {
+                    this.flLevel = flLevel;
+                }
+
+                public Object getRscl() {
+                    return rscl;
+                }
+
+                public void setRscl(Object rscl) {
+                    this.rscl = rscl;
+                }
+
+                public FreeTrialPrivilegeBean getFreeTrialPrivilege() {
+                    return freeTrialPrivilege;
+                }
+
+                public void setFreeTrialPrivilege(FreeTrialPrivilegeBean freeTrialPrivilege) {
+                    this.freeTrialPrivilege = freeTrialPrivilege;
+                }
+
+                public List<ChargeInfoListBean> getChargeInfoList() {
+                    return chargeInfoList;
+                }
+
+                public void setChargeInfoList(List<ChargeInfoListBean> chargeInfoList) {
+                    this.chargeInfoList = chargeInfoList;
+                }
+
+                public static class FreeTrialPrivilegeBean {
+                    @SerializedName("resConsumable")
+                    private Boolean resConsumable;
+                    @SerializedName("userConsumable")
+                    private Boolean userConsumable;
+                    @SerializedName("listenType")
+                    private Object listenType;
+
+                    public Boolean getResConsumable() {
+                        return resConsumable;
+                    }
+
+                    public void setResConsumable(Boolean resConsumable) {
+                        this.resConsumable = resConsumable;
+                    }
+
+                    public Boolean getUserConsumable() {
+                        return userConsumable;
+                    }
+
+                    public void setUserConsumable(Boolean userConsumable) {
+                        this.userConsumable = userConsumable;
+                    }
+
+                    public Object getListenType() {
+                        return listenType;
+                    }
+
+                    public void setListenType(Object listenType) {
+                        this.listenType = listenType;
+                    }
+                }
+
+                public static class ChargeInfoListBean {
+                    @SerializedName("rate")
+                    private Integer rate;
+                    @SerializedName("chargeUrl")
+                    private Object chargeUrl;
+                    @SerializedName("chargeMessage")
+                    private Object chargeMessage;
+                    @SerializedName("chargeType")
+                    private Integer chargeType;
+
+                    public Integer getRate() {
+                        return rate;
+                    }
+
+                    public void setRate(Integer rate) {
+                        this.rate = rate;
+                    }
+
+                    public Object getChargeUrl() {
+                        return chargeUrl;
+                    }
+
+                    public void setChargeUrl(Object chargeUrl) {
+                        this.chargeUrl = chargeUrl;
+                    }
+
+                    public Object getChargeMessage() {
+                        return chargeMessage;
+                    }
+
+                    public void setChargeMessage(Object chargeMessage) {
+                        this.chargeMessage = chargeMessage;
+                    }
+
+                    public Integer getChargeType() {
+                        return chargeType;
+                    }
+
+                    public void setChargeType(Integer chargeType) {
+                        this.chargeType = chargeType;
+                    }
+                }
+            }
+
+            public static class ArBean {
+                @SerializedName("id")
+                private Integer id;
+                @SerializedName("name")
+                private String name;
+                @SerializedName("tns")
+                private List<?> tns;
+                @SerializedName("alias")
+                private List<String> alias;
+                @SerializedName("alia")
+                private List<String> alia;
+
+                public Integer getId() {
+                    return id;
+                }
+
+                public void setId(Integer id) {
+                    this.id = id;
+                }
+
+                public String getName() {
+                    return name;
+                }
+
+                public void setName(String name) {
+                    this.name = name;
+                }
+
+                public List<?> getTns() {
+                    return tns;
+                }
+
+                public void setTns(List<?> tns) {
+                    this.tns = tns;
+                }
+
+                public List<String> getAlias() {
                     return alias;
                 }
 
-                public void setAlias(List<?> alias) {
+                public void setAlias(List<String> alias) {
                     this.alias = alias;
+                }
+
+                public List<String> getAlia() {
+                    return alia;
+                }
+
+                public void setAlia(List<String> alia) {
+                    this.alia = alia;
                 }
             }
         }

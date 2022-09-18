@@ -2,7 +2,7 @@ package cn.intersteller.darkintersteller.database;
 
 public class MySQLite_CloudPan_Bean {
     private String song_name;//从simpleSong中拿
-    private String song_id;//从simpleSong中拿
+    private int song_id;//从simpleSong中拿
 
     private String album_name;//从alBeans中拿
     private String album_id;//从alBeans中拿
@@ -18,11 +18,11 @@ public class MySQLite_CloudPan_Bean {
         this.song_name = song_name;
     }
 
-    public String getSong_id() {
+    public int getSong_id() {
         return song_id;
     }
 
-    public void setSong_id(String song_id) {
+    public void setSong_id(int song_id) {
         this.song_id = song_id;
     }
 
@@ -58,7 +58,7 @@ public class MySQLite_CloudPan_Bean {
         this.singer_name = singer_name;
     }
 
-    public MySQLite_CloudPan_Bean(String song_name, String song_id, String album_name, String album_id, String singer_name) {
+    public MySQLite_CloudPan_Bean(String song_name, int song_id, String album_name, String album_id, String singer_name) {
         this.song_name = song_name;
         this.song_id = song_id;
         this.album_name = album_name;

@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 
 import cn.intersteller.darkintersteller.MainActivity;
 import cn.intersteller.darkintersteller.login.LoginActivity;
+import cn.intersteller.darkintersteller.login.LoginActivity4Phone;
 import cn.intersteller.darkintersteller.utils.SharedPreferenceUtils;
 
 public class SpalashActivity extends Activity {
@@ -28,7 +29,7 @@ public class SpalashActivity extends Activity {
             Long login_user_id = SharedPreferenceUtils.getPrefLong("login_user_id", 0l);
             Log.i("denglogin_user_id", "login_user_id = " + login_user_id);
             if (login_user_id == 0) {
-                startActivity(new Intent(SpalashActivity.this, LoginActivity.class));
+                startActivity(new Intent(SpalashActivity.this, LoginActivity4Phone.class));
                 overridePendingTransition(0, 0);
 
             } else {

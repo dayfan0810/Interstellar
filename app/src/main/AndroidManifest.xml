@@ -67,6 +67,7 @@
 
         </activity>
         <activity android:name=".login.LoginActivity" />
+        <activity android:name=".login.LoginActivity4Phone" />
         <activity android:name="cn.intersteller.darkintersteller.ui.NewsDetailActivity" />
 
         <activity android:name=".ui.CnbetaNewsDetailActivity" />

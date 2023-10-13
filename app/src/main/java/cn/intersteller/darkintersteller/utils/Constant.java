@@ -16,7 +16,7 @@ public class Constant {
     //网易云音乐接口
 //    public static final String NETEASEBASE = "http://musicapi.leanapp.cn/";
 //    public static final String NETEASEBASE = isWifi ? "http://42.192.43.247:3000/" : "http://39.108.131.225:3000/";
-    public static final String NETEASEBASE = "http://1.15.151.241:3000/";
+    public static final String NETEASEBASE = "http://123.207.223.36:3000/";
 
 
     //mv 排行
